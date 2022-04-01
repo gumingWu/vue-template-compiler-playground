@@ -1,0 +1,27 @@
+{
+  "name": "vue-template-compiler-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gumingWu/vue-template-compiler-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gumingWu/vue-template-compiler-playground/issues"
+  },
+  "homepage": "https://github.com/gumingWu/vue-template-compiler-playground#readme",
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.1"
+  }
+}
