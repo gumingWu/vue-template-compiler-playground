@@ -6,6 +6,17 @@
 import CodeMirror from './codemirror'
 import { ref, onMounted } from 'vue'
 
+interface Props {
+  value?: string
+  mode?: string
+  readOnly?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  value: '',
+  mode: 'htmlmixed',
+  readOnly: false,
+})
 const emit = defineEmits<(e: 'change', value: string) => void>()
 
 const el = ref()
@@ -13,8 +24,8 @@ const el = ref()
 onMounted(() => {
   const editor = CodeMirror(el.value!, {
     value: '',
-    mode: 'htmlmixed',
-    readonly: false,
+    mode: props.mode,
+    readOnly: props.readOnly,
     tabSize: 2,
     lineWrapping: true,
     lineNumbers: true,
