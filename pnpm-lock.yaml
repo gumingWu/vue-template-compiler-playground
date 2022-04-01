@@ -3,12 +3,14 @@ lockfileVersion: 5.3
 specifiers:
   '@vitejs/plugin-vue': ^2.3.1
   '@vue/compiler-dom': ^3.2.31
+  codemirror: ^5.65.2
   vite: ^2.9.1
   vue: ^3.2.31
   vue-template-compiler: ^2.6.14
 
 dependencies:
   '@vue/compiler-dom': 3.2.31
+  codemirror: 5.65.2
   vue: 3.2.31
   vue-template-compiler: 2.6.14
 
@@ -116,6 +118,10 @@ packages:
 
   /@vue/shared/3.2.31:
     resolution: {integrity: sha512-ymN2pj6zEjiKJZbrf98UM2pfDd6F2H7ksKw7NDt/ZZ1fh5Ei39X5tABugtT03ZRlWd9imccoK0hE8hpjpU7irQ==}
+    dev: false
+
+  /codemirror/5.65.2:
+    resolution: {integrity: sha512-SZM4Zq7XEC8Fhroqe3LxbEEX1zUPWH1wMr5zxiBuiUF64iYOUH/JI88v4tBag8MiBS8B8gRv8O1pPXGYXQ4ErA==}
     dev: false
 
   /csstype/2.6.20:
