@@ -11,12 +11,17 @@ const emit = defineEmits<(e: 'change', value: string) => void>()
 const el = ref()
 
 onMounted(() => {
-  console.log('hhh', el)
-
   const editor = CodeMirror(el.value!, {
     value: '',
     mode: 'htmlmixed',
     readonly: false,
+    tabSize: 2,
+    lineWrapping: true,
+    lineNumbers: true,
+    autoCloseBrackets: true,
+    autoCloseTags: true,
+    foldGutter: true,
+    gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
   })
 
   editor.on('change', () => {

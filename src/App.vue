@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import CodeMirror from './codemirror/CodeMirror.vue'
 import Header from './Header/Header.vue'
 import SplitPane from './SplitPane/SplitPane.vue'
+import Editor from './editor/Editor.vue'
 // import { compile } from 'vue-template-compiler'
 // import { compile as compileV3 } from '@vue/compiler-dom'
 
@@ -24,7 +24,7 @@ setVH()
   <div class="compiler-playground">
     <Header />
     <split-pane>
-      <template #left> <CodeMirror></CodeMirror> </template>
+      <template #left> <Editor /> </template>
     </split-pane>
   </div>
   <!-- text: {{ text }}
