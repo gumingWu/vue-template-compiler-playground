@@ -2,6 +2,7 @@
 import Header from './Header/Header.vue'
 import SplitPane from './SplitPane/SplitPane.vue'
 import Editor from './editor/Editor.vue'
+import Preview from './preview/Preview.vue'
 // import { compile } from 'vue-template-compiler'
 // import { compile as compileV3 } from '@vue/compiler-dom'
 
@@ -25,6 +26,7 @@ setVH()
     <Header />
     <split-pane>
       <template #left> <Editor /> </template>
+      <template #right> <Preview /> </template>
     </split-pane>
   </div>
   <!-- text: {{ text }}

@@ -5,6 +5,7 @@
 <script setup lang="ts">
 import CodeMirror from './codemirror'
 import { ref, onMounted } from 'vue'
+import { welcomeCode } from '../store'
 
 interface Props {
   value?: string
@@ -38,6 +39,13 @@ onMounted(() => {
   editor.on('change', () => {
     emit('change', editor.getValue())
   })
+
+  setTimeout(() => {
+    editor.refresh()
+  }, 50)
+
+  // 初始化欢迎代码
+  editor.setValue(welcomeCode.v2)
 })
 </script>
 
