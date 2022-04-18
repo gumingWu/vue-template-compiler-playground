@@ -12,7 +12,7 @@ export const useCodeStore = defineStore('codeStore', {
       this.code = val
       const compileToV2 = compilerV2.compile(val)
       this.compileToV2 = compileToV2
-      console.log(this.compileToV2)
+      console.log('这里是改变后的值', this.compileToV2)
     },
   },
 })
